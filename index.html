@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="YourFolio Studio creates distinctive personal portfolio websites for students, creators and professionals.">
+
+  <title>YourFolio Studio — Your Work. Your Story.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="project.css">
+  <script src="script.js" defer></script>
+  <script type="module" src="hero-3d.js"></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="#home" class="brand" aria-label="YourFolio Studio home">
+      <img
+        src="assets/yf-logo.png"
+        alt="YourFolio Studio logo"
+        class="brand-logo"
+      >
+      <span class="brand-name">YourFolio <span>Studio</span></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#booking" class="nav-book">
+        Book a Website <span>↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECTION 1: LANDING PAGE -->
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow reveal">
+          <span class="status-dot"></span>
+          PERSONAL WEBSITES. DISTINCTIVE STORIES.
+        </p>
+
+        <h1 class="hero-title reveal">
+          Your work.<br>
+          Your story.<br>
+          <span>Your own space.</span>
+        </h1>
+
+        <p class="hero-description reveal">
+          We turn your skills, ideas and ambitions into a
+          personal portfolio website that makes a lasting
+          first impression.
+        </p>
+
+        <a href="#work" class="hero-cta reveal">
+          <span>Explore our work</span>
+          <span class="cta-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <p class="hero-note reveal">
+          For students, creators and future professionals.
+        </p>
+      </div>
+
+      <div class="hero-visual" id="hero-visual">
+        <canvas
+          id="hero-canvas"
+          aria-label="YourFolio Studio logo assembling in 3D"
+        ></canvas>
+
+        <img
+          src="assets/yf-logo-transparent.png"
+          alt="YourFolio Studio logo"
+          class="hero-logo-fallback"
+        >
+
+        <p class="visual-caption">A space that's yours.</p>
+      </div>
+
+      <div class="hero-bottom">
+        <span>BUILT AROUND YOUR IDENTITY.</span>
+        <a href="#work" class="scroll-cue">
+          SCROLL TO EXPLORE <span>↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 2: WORK PREVIEW -->
+    <section class="content-section work-section" id="work">
+      <div class="section-heading reveal">
+        <p class="section-label">01 / SELECTED WORK</p>
+        <h2>Good work deserves<br>to be <span>seen.</span></h2>
+        <p class="section-description">
+          Your skills have a story. Your portfolio gives it a home.
+        </p>
+      </div>
+
+      <div class="work-preview reveal">
+        <span class="preview-number">YOUR NEXT PROJECT</span>
+        <h3>Your ideas,<br>beautifully presented.</h3>
+        <p>
+          A personal website designed around who you are
+          and where you want to go.
+        </p>
+        <span class="preview-decoration" aria-hidden="true">YF.</span>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES PREVIEW -->
+    <section class="content-section services-section" id="services">
+      <div class="section-heading reveal">
+        <p class="section-label">02 / WHAT WE CREATE</p>
+        <h2>A website that<br>feels <span>like you.</span></h2>
+      </div>
+
+      <div class="service-list">
+        <article class="service-item reveal">
+          <span class="service-index">01</span>
+          <div>
+            <h3>Personal Portfolios</h3>
+            <p>Showcase your skills, projects and journey.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-item reveal">
+          <span class="service-index">02</span>
+          <div>
+            <h3>Student & Developer Websites</h3>
+            <p>Present your work with confidence.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-item reveal">
+          <span class="service-index">03</span>
+          <div>
+            <h3>Portfolio Redesigns</h3>
+            <p>Give your existing online presence a fresh start.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ABOUT PREVIEW -->
+    <section class="content-section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="section-label">03 / ABOUT THE STUDIO</p>
+        <h2>Make your next<br>step <span>count.</span></h2>
+        <p class="section-description">
+          YourFolio Studio helps people present their potential
+          through thoughtful, personal web design.
+        </p>
+      </div>
+    </section>
+
+    <!-- BOOKING PLACEHOLDER: PAGE WILL BE BUILT LATER -->
+    <section class="booking-placeholder" id="booking">
+      <p class="section-label">YOUR NEXT CHAPTER</p>
+      <h2>Ready to build your portfolio?</h2>
+      <p>Our booking experience is coming next.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="footer-brand">YourFolio Studio<span>®</span></a>
+    <p>Made to make your work stand out.</p>
+    <a href="mailto:yourfoliostudio@gmail.com">
+      Get in touch ↗
+    </a>
+  </footer>
+</body>
+</html>
