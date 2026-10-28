@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f9ff">
+  <meta name="description" content="Tell YourFolio Studio about the portfolio website you want to build.">
+  <title>Book a Website — YourFolio Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="booking-page">
+  <header class="booking-top"><a class="brand" href="index.html"><img class="brand-logo" src="assets/yf-logo.png" alt=""><span class="brand-name">YourFolio <span>Studio</span></span></a><a class="back-home" href="index.html">← Back to website</a></header>
+  <main class="booking-wrap">
+    <div class="booking-heading"><span class="section-kicker">✦ LET'S GET STARTED</span><h1>Let's build your<br><span>online presence.</span></h1><p>Share a few details about yourself and the website you need. We'll use this brief to understand your goals and discuss the next steps.</p></div>
+    <!-- FormSubmit sends responses to the studio email. First-time setup may require email activation. -->
+    <form class="booking-form" id="bookingForm" action="https://formsubmit.co/yourfoliostudio@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New YourFolio Studio website booking">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <div class="form-progress"><span></span></div>
+      <h2 class="form-section-title">01 / Your details</h2><p class="form-section-help">How can we reach you about your portfolio?</p>
+      <div class="form-grid">
+        <div class="form-field"><label for="fullName">Full name *</label><input id="fullName" name="Full name" type="text" placeholder="Your name" autocomplete="name" required></div>
+        <div class="form-field"><label for="email">Email address *</label><input id="email" name="Email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+        <div class="form-field"><label for="phone">Phone / WhatsApp (optional)</label><input id="phone" name="Phone or WhatsApp" type="tel" placeholder="Your contact number" autocomplete="tel"></div>
+        <div class="form-field"><label for="role">I am a... *</label><select id="role" name="I am a" required><option value="" disabled selected>Select your role</option><option>Student</option><option>Job seeker</option><option>Working professional</option><option>Freelancer</option><option>Creator / Artist</option><option>Business owner</option><option>Other</option></select></div>
+      </div>
+      <div class="form-divider"></div>
+      <h2 class="form-section-title">02 / Your website</h2><p class="form-section-help">Help us understand what you want to create.</p>
+      <div class="form-grid">
+        <div class="form-field"><label for="portfolioType">Portfolio type *</label><select id="portfolioType" name="Portfolio type" required><option value="" disabled selected>Choose a portfolio</option><option>Student Portfolio</option><option>Professional Portfolio</option><option>Freelancer Portfolio</option><option>Creative / Personal Brand</option><option>Not sure yet</option></select></div>
+        <div class="form-field"><label for="purpose">Main goal *</label><select id="purpose" name="Main goal" required><option value="" disabled selected>What should it help you do?</option><option>Get internships</option><option>Apply for jobs</option><option>Showcase projects and skills</option><option>Find freelance clients</option><option>Build a personal brand</option><option>Other</option></select></div>
+        <div class="form-field"><label for="style">Design style *</label><select id="style" name="Preferred design style" required><option value="" disabled selected>Choose a style</option><option>Clean and minimal</option><option>Modern and futuristic</option><option>Creative and colourful</option><option>Dark and bold</option><option>Professional and formal</option><option>Please recommend one</option></select></div>
+        <div class="form-field"><label for="budget">Approximate budget *</label><select id="budget" name="Approximate budget" required><option value="" disabled selected>Select your budget</option><option>Student / starter budget</option><option>₹1,000–₹2,500</option><option>₹2,500–₹5,000</option><option>₹5,000+</option><option>Need guidance first</option></select></div>
+        <div class="form-field"><label for="timeline">When do you need it? *</label><select id="timeline" name="Timeline" required><option value="" disabled selected>Choose a timeline</option><option>As soon as possible</option><option>Within 1–2 weeks</option><option>Within a month</option><option>Flexible / just exploring</option></select></div>
+        <div class="form-field"><label for="domain">Do you have a domain? *</label><select id="domain" name="Domain status" required><option value="" disabled selected>Select an option</option><option>Yes, I have a domain</option><option>No, I need help with it</option><option>Not sure what a domain is</option></select></div>
+        <div class="form-field full"><label for="reference">Reference website or inspiration (optional)</label><input id="reference" name="Reference website or inspiration" type="url" placeholder="https://example.com"></div>
+        <div class="form-field full"><label for="content">What should your website include? *</label><textarea id="content" name="Website content and sections" placeholder="For example: About me, skills, projects, resume, certificates, contact form..." required></textarea></div>
+        <div class="form-field full"><label for="extra">Additional details (optional)</label><textarea id="extra" name="Additional details" placeholder="Anything else we should know—special features, colours, questions or ideas?"></textarea></div>
+      </div>
+      <div class="form-submit-row"><p class="form-privacy">Your details will be used only to respond to this website enquiry. Please do not include passwords or sensitive personal information.</p><button class="hero-cta form-submit" type="submit"><span>Send booking request</span><span class="cta-arrow">↗</span></button></div>
+      <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <footer class="booking-footer">YourFolio Studio · Your work. Your story. Your own space.</footer>
+</body>
+</html>

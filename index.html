@@ -1,142 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="theme-color" content="#f8f9ff">
-  <meta name="description" content="YourFolio Studio creates distinctive portfolio websites for students, creators and professionals.">
-
+  <meta name="description" content="YourFolio Studio builds distinctive, affordable portfolio websites for students, creators and professionals.">
   <title>YourFolio Studio — Your Work. Your Story.</title>
-
-  <!-- Premium fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Connect CSS -->
   <link rel="stylesheet" href="project.css">
-
-  <!-- Connect JavaScript -->
   <script src="script.js" defer></script>
   <script type="module" src="hero-3d.js"></script>
 </head>
-
 <body>
-  <!-- NAVBAR -->
   <header class="navbar">
-    <a href="#home" class="brand" aria-label="YourFolio Studio home">
-      <img src="assets/yf-logo.png" alt="YourFolio Studio" class="brand-logo">
+    <a class="brand" href="#home" aria-label="YourFolio Studio home">
+      <img class="brand-logo" src="assets/yf-logo.png" alt="">
       <span class="brand-name">YourFolio <span>Studio</span></span>
     </a>
-
-    <button class="menu-toggle"
-      type="button"
-      aria-label="Open navigation menu"
-      aria-expanded="false"
-      aria-controls="nav-menu">
-      <span></span>
-      <span></span>
-    </button>
-
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span></button>
     <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
-      <a href="#work" class="nav-link">Work</a>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#about" class="nav-link">About</a>
-
-      <a class="nav-book" href="mailto:yourfoliostudio@gmail.com?subject=Portfolio%20Website%20Enquiry">
-        Book a Website <span>↗</span>
-      </a>
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-book" href="booking.html">Book a Website <span>↗</span></a>
     </nav>
   </header>
 
   <main>
-    <!-- SECTION 1: HERO / LANDING PAGE -->
     <section class="hero" id="home">
-      <div class="hero-background" aria-hidden="true">
-        <div class="gradient-blob blob-one"></div>
-        <div class="gradient-blob blob-two"></div>
-        <div class="grid-pattern"></div>
-      </div>
-
+      <div class="hero-background" aria-hidden="true"><div class="gradient-blob blob-one"></div><div class="gradient-blob blob-two"></div><div class="grid-pattern"></div></div>
       <div class="hero-content">
-        <p class="eyebrow reveal">
-          <span class="status-dot"></span>
-          PERSONAL WEBSITES. DISTINCTIVE STORIES.
-        </p>
-
-        <h1 class="hero-title reveal">
-          Your work.<br>
-          Your story.<br>
-          <span>Your own space.</span>
-        </h1>
-
-        <p class="hero-description reveal">
-          We turn your skills, ideas and ambitions into a
-          personal portfolio that makes a lasting first impression.
-        </p>
-
-        <a class="hero-cta reveal"
-          href="mailto:yourfoliostudio@gmail.com?subject=Let's%20Build%20My%20Portfolio">
-          <span>Let's Build Your Portfolio</span>
-          <span class="cta-arrow" aria-hidden="true">↗</span>
-        </a>
-
-        <div class="hero-trust reveal">
-          <span class="trust-line"></span>
-          <p>For students, creators and future professionals.</p>
-        </div>
+        <p class="eyebrow reveal"><span class="status-dot"></span> PERSONAL WEBSITES. DISTINCTIVE STORIES.</p>
+        <h1 class="hero-title reveal">Your work.<br>Your story.<br><span>Your own space.</span></h1>
+        <p class="hero-description reveal">We turn your skills, ideas and ambitions into a personal portfolio that makes a lasting first impression.</p>
+        <a class="hero-cta reveal" href="booking.html"><span>Let's Build Your Portfolio</span><span class="cta-arrow" aria-hidden="true">↗</span></a>
+        <div class="hero-trust reveal"><span class="trust-line"></span><p>For students, creators and future professionals.</p></div>
       </div>
-
-      <!-- 3D animation canvas -->
       <div class="hero-visual" id="hero-visual">
         <div class="visual-glow" aria-hidden="true"></div>
-
-        <canvas
-          id="hero-canvas"
-          aria-label="Animated 3D portfolio design showcase">
-        </canvas>
-
-        <!-- Shown automatically if 3D cannot load -->
+        <canvas id="hero-canvas" aria-label="Animated 3D portfolio design showcase"></canvas>
         <div class="hero-fallback" aria-hidden="true">
-          <div class="fallback-orbit orbit-one"></div>
-          <div class="fallback-orbit orbit-two"></div>
-
-          <div class="fallback-card fallback-card-back">
-            <span>CREATIVE</span>
-            <div class="fallback-lines"></div>
-          </div>
-
-          <div class="fallback-card fallback-card-front">
-            <span class="fallback-tag">YOUR NEXT CHAPTER</span>
-            <strong>Make your<br>work stand out.</strong>
-            <div class="fallback-card-bottom">
-              <span>PORTFOLIO / 01</span>
-              <span>↗</span>
-            </div>
-          </div>
-
-          <div class="floating-chip chip-top">✳ YOUR IDEAS</div>
-          <div class="floating-chip chip-bottom">DESIGNED FOR YOU ↗</div>
+          <div class="fallback-orbit orbit-one"></div><div class="fallback-orbit orbit-two"></div>
+          <div class="fallback-card fallback-card-back"><span>CREATIVE</span><div class="fallback-lines"></div></div>
+          <div class="fallback-card fallback-card-front"><span class="fallback-tag">YOUR NEXT CHAPTER</span><strong>Make your<br>work stand out.</strong><div class="fallback-card-bottom"><span>PORTFOLIO / 01</span><span>↗</span></div></div>
+          <div class="floating-chip chip-top">✳ YOUR IDEAS</div><div class="floating-chip chip-bottom">DESIGNED FOR YOU ↗</div>
         </div>
-
         <p class="visual-caption">A space that's yours<span>.</span></p>
       </div>
+      <div class="hero-bottom"><span>BUILT AROUND YOUR IDENTITY.</span><a class="scroll-cue" href="#services">SCROLL TO EXPLORE <span>↓</span></a></div>
+    </section>
 
-      <div class="hero-bottom">
-        <span>BUILT AROUND YOUR IDENTITY.</span>
-        <a href="#work" class="scroll-cue">
-          SCROLL TO EXPLORE <span>↓</span>
-        </a>
+    <section class="services-section section-pad" id="services">
+      <div class="section-container">
+        <div class="section-heading reveal"><span class="section-kicker">✦ WHAT WE DO</span><h2>Your skills deserve<br><span>to be seen.</span></h2><p>Turn your skills, projects and ideas into a professional online presence with a portfolio designed around you.</p></div>
+        <div class="services-showcase reveal" aria-label="Portfolio website visual showcase">
+          <div class="showcase-glow"></div><div class="showcase-orbit showcase-orbit-one"></div><div class="showcase-orbit showcase-orbit-two"></div>
+          <div class="floating-tag tag-student">✦ Student</div><div class="floating-tag tag-creative">↗ Creative</div><div class="floating-tag tag-career">✧ Career ready</div>
+          <div class="portfolio-mockup mockup-back"><div class="mockup-top"><i></i><i></i><i></i></div><div class="mockup-back-content"><div class="mockup-avatar"></div><div class="mockup-line"></div><div class="mockup-line short"></div><div class="mockup-projects"><i></i><i></i><i></i></div></div></div>
+          <div class="portfolio-mockup mockup-front"><div class="mockup-top"><i></i><i></i><i></i><small>YOUR PORTFOLIO</small></div><div class="mockup-front-content"><span class="mockup-eyebrow">HELLO, WORLD!</span><h3>Your next<br><span>chapter.</span></h3><p>Skills. Projects. Possibilities.</p><div class="mockup-action">EXPLORE MY WORK ↗</div><div class="mockup-bottom"><span>01 / ABOUT</span><span>02 / PROJECTS</span></div></div></div>
+          <div class="showcase-caption"><span class="caption-dot"></span> YOUR STORY, YOUR WEBSITE</div>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal"><div class="service-card-top"><span class="service-number">01 / STUDENTS</span><span class="service-symbol">✳</span></div><div class="service-art student-art"><div class="art-paper"><span class="art-label">MY JOURNEY</span><strong>Learn.<br>Build.<br>Grow.</strong><div class="art-line"></div><div class="art-line small"></div><div class="art-sticker">STUDENT</div></div></div><h3>Student Portfolio</h3><p>Showcase your academic journey, skills, certificates, projects and achievements in one place.</p><a class="service-link" href="booking.html?type=Student%20Portfolio">Build my portfolio <span>↗</span></a></article>
+          <article class="service-card reveal"><div class="service-card-top"><span class="service-number">02 / PROFESSIONALS</span><span class="service-symbol">✦</span></div><div class="service-art professional-art"><div class="professional-paper"><span class="art-label">INTRODUCING</span><strong>Make your<br>mark.</strong><div class="professional-pill">MY EXPERIENCE ↗</div></div></div><h3>Professional Portfolio</h3><p>Present your experience, resume, skills and projects with a polished website built for your next opportunity.</p><a class="service-link" href="booking.html?type=Professional%20Portfolio">Build my portfolio <span>↗</span></a></article>
+          <article class="service-card reveal"><div class="service-card-top"><span class="service-number">03 / FREELANCERS</span><span class="service-symbol">↗</span></div><div class="service-art freelancer-art"><div class="freelancer-paper"><span class="art-label">INDEPENDENT BY DESIGN</span><strong>Your work.<br>Your rules.</strong><div class="freelancer-bubble">LET'S COLLABORATE</div></div></div><h3>Freelancer Portfolio</h3><p>Display your best work, explain your services and help potential clients discover what you can do.</p><a class="service-link" href="booking.html?type=Freelancer%20Portfolio">Build my portfolio <span>↗</span></a></article>
+        </div>
+        <div class="services-footer reveal"><p>Have a different idea in mind?</p><a href="booking.html">Let's build it together <span>↗</span></a></div>
       </div>
     </section>
 
-    <!-- Temporary anchor points for navigation.
-         We will build these sections later. -->
-    <div id="work" class="next-section-anchor"></div>
-    <div id="services" class="next-section-anchor"></div>
-    <div id="about" class="next-section-anchor"></div>
+    <section class="work-section section-pad" id="work"><div class="section-container"><div class="section-heading reveal"><span class="section-kicker">✦ THE POSSIBILITIES</span><h2>Made to feel<br><span>like you.</span></h2><p>From clean and minimal to bold and expressive, your portfolio should match your personality and goals.</p></div>
+      <div class="work-grid">
+        <article class="work-card work-card-one reveal">
+          <div class="device-stage stage-blue"><span class="device-label">01 / PERSONAL BRAND</span>
+            <div class="device-desktop"><div class="device-browser"><i></i><i></i><i></i><span>yourname.site</span></div><div class="device-screen screen-blue"><div class="screen-nav">YN. <span>ABOUT&nbsp;&nbsp; WORK&nbsp;&nbsp; CONTACT</span></div><div class="screen-copy"><small>HELLO, I'M</small><strong>Your Name<span>.</span></strong><p>Building my next chapter.</p><b>EXPLORE MY WORK ↗</b></div><div class="screen-sun"></div></div></div>
+            <div class="device-phone"><div class="phone-speaker"></div><div class="phone-screen screen-blue"><small>HELLO, I'M</small><strong>Your<br>Name<span>.</span></strong><p>Building my next chapter.</p><b>MY WORK ↗</b><div class="phone-orb"></div></div></div>
+          </div><div class="work-card-info"><div><h3>Personal Brand</h3><p>A desktop + mobile experience for your story, skills and goals.</p><a class="service-link showcase-visit-link" href="https://s4njeev-mukhiy4.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer">Visit live website <span>↗</span></a></div><span>01</span></div>
+        </article>
+        <article class="work-card work-card-two reveal">
+          <div class="device-stage stage-lilac"><span class="device-label">02 / CREATIVE PORTFOLIO</span>
+            <div class="device-desktop"><div class="device-browser"><i></i><i></i><i></i><span>creativefolio.site</span></div><div class="device-screen screen-lilac"><div class="screen-nav">STUDIO <span>PROJECTS&nbsp;&nbsp; ABOUT</span></div><div class="screen-copy"><small>SELECTED WORK / 2026</small><strong>Ideas into<br>impact<span>.</span></strong><p>Design with intention.</p><b>VIEW PROJECTS ↗</b></div><div class="screen-shape"></div></div></div>
+            <div class="device-phone"><div class="phone-speaker"></div><div class="phone-screen screen-lilac"><small>SELECTED WORK</small><strong>Ideas into<br>impact<span>.</span></strong><p>Design with intention.</p><b>VIEW WORK ↗</b><div class="phone-shape"></div></div></div>
+          </div><div class="work-card-info"><div><h3>Creative Portfolio</h3><p>Showcase your visual work in a bold, responsive layout.</p><a class="service-link showcase-visit-link" href="https://sites.google.com/view/yourfoliostudio/full-page-embed" target="_blank" rel="noopener noreferrer">Visit live website <span>↗</span></a></div><span>02</span></div>
+        </article>
+        <article class="work-card work-card-three reveal">
+          <div class="device-stage stage-dark"><span class="device-label">03 / CAREER READY</span>
+            <div class="device-desktop"><div class="device-browser"><i></i><i></i><i></i><span>careerfolio.site</span></div><div class="device-screen screen-dark"><div class="screen-nav">PORTFOLIO <span>SKILLS&nbsp;&nbsp; PROJECTS</span></div><div class="screen-copy"><small>READY FOR WHAT'S NEXT?</small><strong>Show what<br>you can do<span>.</span></strong><p>Skills. Projects. Experience.</p><b>LET'S CONNECT ↗</b></div><div class="screen-bars"><i></i><i></i><i></i></div></div></div>
+            <div class="device-phone"><div class="phone-speaker"></div><div class="phone-screen screen-dark"><small>CAREER PORTFOLIO</small><strong>Show what<br>you can do<span>.</span></strong><p>Skills. Projects. Experience.</p><b>CONNECT ↗</b><div class="phone-bars"><i></i><i></i><i></i></div></div></div>
+          </div><div class="work-card-info"><div><h3>Career Portfolio</h3><p>Make projects and experience easy to explore on every screen.</p></div><span>03</span></div>
+        </article>
+      </div>
+      <p class="work-note reveal">Concept previews shown on both desktop and mobile. Your final design will be customised to your goals and content.</p>
+    </div></section>
+
+    <section class="about-section section-pad" id="about"><div class="section-container about-layout"><div class="about-stamp reveal"><div class="stamp-ring">YOUR STORY · YOUR SPACE · YOUR FUTURE · </div><div class="stamp-center">YF<span>✳</span></div></div><div class="about-copy reveal"><span class="section-kicker">✦ A LITTLE ABOUT US</span><h2>Small details.<br><span>Big first impressions.</span></h2><p>Your portfolio is more than a website link. It is a place to bring your experience, ambitions and best work together—ready to share whenever an opportunity comes your way.</p><p>At YourFolio Studio, we focus on clear design, responsive layouts and a personal feel, while keeping the process approachable for students and early-career professionals.</p><a class="text-link" href="booking.html">Tell us what you have in mind <span>↗</span></a></div></div></section>
+
+    <section class="final-cta" id="contact"><div class="final-cta-glow"></div><div class="final-cta-inner reveal"><span class="section-kicker">YOUR NEXT CHAPTER STARTS HERE</span><h2>Ready to make<br><span>your mark?</span></h2><p>Let's create a portfolio that gives your work the space it deserves.</p><a class="hero-cta" href="booking.html"><span>Book a Website</span><span class="cta-arrow">↗</span></a><a class="contact-email-link" href="mailto:yourfoliostudio@gmail.com?subject=YourFolio%20Studio%20Enquiry">or email us at yourfoliostudio@gmail.com</a></div></section>
   </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#home"><img class="brand-logo" src="assets/yf-logo.png" alt=""><span class="brand-name">YourFolio <span>Studio</span></span></a><p>Your work. Your story. Your own space.</p><div class="footer-socials" aria-label="Social media links">
+    <a class="social-link" href="https://www.instagram.com/yourfolio_studio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-dot" cx="17.5" cy="6.5" r="1"/></svg><span>Instagram</span></a>
+    <a class="social-link" href="https://www.linkedin.com/company/yourfoliostudio/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7.2v.1M11 17v-7h3v1.2c.5-1 3-1.5 3 1.7V17M11 13c0-2 3-3 5-1"/></svg><span>LinkedIn</span></a>
+    <a class="social-link" href="https://x.com/YourFolioStudio" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h4.7l11.3 18h-4.7zM20 3l-7 8M4 21l7-8"/></svg><span>X</span></a>
+    <a class="social-link" href="mailto:yourfoliostudio@gmail.com" aria-label="Email YourFolio Studio"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><span>Email</span></a>
+  </div></div><div class="footer-bottom"><small>© <span id="year"></span> YourFolio Studio. Made for your next chapter.</small><a href="#home">Back to top ↑</a></div></footer>
+
+  <a class="sticky-contact" href="mailto:yourfoliostudio@gmail.com?subject=YourFolio%20Studio%20Enquiry" aria-label="Contact YourFolio Studio by email"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span>Contact us</span><span class="contact-arrow">↗</span></a>
 </body>
 </html>
